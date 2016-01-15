@@ -51,11 +51,25 @@ class ViewController: UIViewController {
         processOperation(currentOperation)
     }
     
+    @IBAction func onClearButtonPressed(sender: UIButton) {
+        playButtonPressedSound()
+        resetCalculator()
+    }
+    
     // MARK: Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupButtonAudio()
+    }
+    
+    func resetCalculator() {
+        runningNumber = ""
+        leftValStr = ""
+        rightValStr = ""
+        currentOperation = .Empty
+        result = ""
+        outputLabel.text = "0"
     }
     
     func setupButtonAudio() {
@@ -88,8 +102,17 @@ class ViewController: UIViewController {
                 rightValStr = runningNumber
                 runningNumber = ""
                 
-                let leftValNumber = Double(leftValStr)!
-                let rightValNumber = Double(rightValStr)!
+                guard let leftValNumber = Double(leftValStr) else {
+                    print("looks like the left numbers is nil")
+                    currentOperation = op
+                    return
+                }
+                
+                guard let rightValNumber = Double(rightValStr) else {
+                    print("looks like the right numbers is nil")
+                    currentOperation = op
+                    return
+                }
                 
                 switch op {
                 case .Add:
