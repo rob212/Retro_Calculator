@@ -33,7 +33,7 @@
                                 <rect key="frame" x="1" y="557" width="600" height="43"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cNA-ts-tsd" userLabel="calc body">
-                                <rect key="frame" x="175" y="108" width="251" height="464"/>
+                                <rect key="frame" x="175" y="99" width="251" height="483"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="rNN-Pq-afw">
                                         <rect key="frame" x="0.0" y="0.0" width="251" height="63"/>
@@ -42,17 +42,16 @@
                                             <constraint firstAttribute="height" constant="63" id="fF3-M2-GDu"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="66s-bk-gdr">
-                                        <rect key="frame" x="0.0" y="63" width="251" height="401"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="66s-bk-gdr">
+                                        <rect key="frame" x="0.0" y="63" width="251" height="420"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="251" id="NTh-Y0-yLq"/>
-                                            <constraint firstAttribute="height" constant="401" id="U9f-kK-6Hp"/>
+                                            <constraint firstAttribute="height" constant="420" id="aEW-hr-7Mx"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="MeX-jg-ma7" userLabel="buttons stack view">
-                                <rect key="frame" x="190" y="196" width="222" height="352"/>
+                                <rect key="frame" x="190" y="215" width="222" height="352"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mJn-hK-V4L" userLabel="789 buttons">
                                         <rect key="frame" x="0.0" y="0.0" width="222" height="68"/>
@@ -247,7 +246,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hG2-Z6-Bra">
-                                <rect key="frame" x="216" y="123" width="200" height="40"/>
+                                <rect key="frame" x="216" y="114" width="200" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="5Et-dg-zi5"/>
                                     <constraint firstAttribute="width" constant="200" id="bqH-Ln-oRz"/>
@@ -260,7 +259,7 @@
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5XJ-mu-9iJ" secondAttribute="bottom" id="3cj-Nc-Hk5"/>
                             <constraint firstAttribute="trailing" secondItem="5XJ-mu-9iJ" secondAttribute="trailing" id="GZF-9x-jD4"/>
-                            <constraint firstItem="MeX-jg-ma7" firstAttribute="centerY" secondItem="cNA-ts-tsd" secondAttribute="centerY" constant="32" id="KBk-DD-5sX"/>
+                            <constraint firstItem="MeX-jg-ma7" firstAttribute="centerY" secondItem="cNA-ts-tsd" secondAttribute="centerY" constant="50" id="KBk-DD-5sX"/>
                             <constraint firstItem="5XJ-mu-9iJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MID-aO-qLY"/>
                             <constraint firstItem="b6n-42-yvs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QT7-bG-hPn"/>
                             <constraint firstItem="5XJ-mu-9iJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="S8A-V0-bC6"/>
